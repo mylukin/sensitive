@@ -2,8 +2,8 @@ package sensitive
 
 // Trie 短语组成的Trie树.
 type Trie struct {
-	Root  *Node
-	Count int64
+	Root   *Node
+	Length int64
 }
 
 // Node Trie树上的一个节点.
@@ -17,8 +17,8 @@ type Node struct {
 // NewTrie 新建一棵Trie
 func NewTrie() *Trie {
 	return &Trie{
-		Root:  NewRootNode(0),
-		Count: 0,
+		Root:   NewRootNode(0),
+		Length: 0,
 	}
 }
 
@@ -26,7 +26,7 @@ func NewTrie() *Trie {
 func (tree *Trie) Add(words ...string) {
 	for _, word := range words {
 		tree.add(word)
-		tree.Count++
+		tree.Length++
 	}
 }
 
@@ -51,7 +51,7 @@ func (tree *Trie) add(word string) {
 func (tree *Trie) Del(words ...string) {
 	for _, word := range words {
 		tree.del(word)
-		tree.Count--
+		tree.Length--
 	}
 }
 

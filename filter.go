@@ -70,6 +70,11 @@ func (filter *Filter) Load(rd io.Reader) error {
 	return nil
 }
 
+// Length
+func (filter *Filter) Length() int64 {
+	return filter.trie.Length
+}
+
 // AddWord 添加敏感词
 func (filter *Filter) AddWord(words ...string) {
 	filter.trie.Add(words...)
