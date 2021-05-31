@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/importcjj/sensitive"
+	"github.com/mylukin/sensitive"
 )
 
 func main() {
