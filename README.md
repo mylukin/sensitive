@@ -4,10 +4,10 @@
 
 FindAll, Validate, Filter and Replace words. 
 
-[![Build Status](https://travis-ci.org/importcjj/sensitive.svg?branch=master)](https://travis-ci.org/importcjj/sensitive) [![GoDoc](https://godoc.org/github.com/importcjj/sensitive?status.svg)](https://godoc.org/github.com/importcjj/sensitive)
+[![Build Status](https://travis-ci.org/mylukin/sensitive.svg?branch=master)](https://travis-ci.org/mylukin/sensitive) [![GoDoc](https://godoc.org/github.com/mylukin/sensitive?status.svg)](https://godoc.org/github.com/mylukin/sensitive)
 
 
-新增分支[Aho-Corasick](https://github.com/importcjj/sensitive/tree/Aho-Corasick)以支持AC自动机
+新增分支[Aho-Corasick](https://github.com/mylukin/sensitive/tree/Aho-Corasick)以支持AC自动机
 
 #### 用法
 
@@ -16,7 +16,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/importcjj/sensitive"
+	"github.com/mylukin/sensitive"
 )
 
 func main() {
@@ -84,7 +84,7 @@ filter.FindAll("这篇文章真的好垃圾")
 加载网络词库。
 
 ```go
-filter.LoadNetWordDict("https://raw.githubusercontent.com/importcjj/sensitive/master/dict/dict.txt")
+filter.LoadNetWordDict("https://raw.githubusercontent.com/mylukin/sensitive/master/dict/dict.txt")
 ```
 
 #### UpdateNoisePattern

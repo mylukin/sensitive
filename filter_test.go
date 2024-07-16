@@ -18,7 +18,7 @@ func TestLoadDict(t *testing.T) {
 
 func TestLoadNetWordDict(t *testing.T) {
 	filter := New()
-	err := filter.LoadNetWordDict("https://raw.githubusercontent.com/importcjj/sensitive/master/dict/dict.txt")
+	err := filter.LoadNetWordDict("https://raw.githubusercontent.com/mylukin/sensitive/master/dict/dict.txt")
 	if err != nil {
 		t.Errorf("fail to load dict %v", err)
 	}
